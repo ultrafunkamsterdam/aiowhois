@@ -43,6 +43,4 @@ class Whois(object):
     domain_data = tldextract.extract(domain_name)
     if not domain_data.suffix:
       raise InvalidDomainName()
-
-    # not implemented yet!
-    pass
+    return domain_data
